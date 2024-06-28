@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spices</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body background="https://images.alphacoders.com/110/thumb-1920-1103539.jpg">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SPICES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about2">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                  </li> -->
+                </ul><br>
+                <!-- <button class="btn p-2 my-lg-0 my-2">Sign In</button> -->
+                <button class="btn">
+                    <a class="nav-link" href="C:\Users\casstudent\Desktop\new project\login.html">Login</a>
+                </button>
+            </div>
+    </nav>
+
+    <!-- home -->
+
+    <section id="home">
+        <h1 class="text-center">ORGANIC SPICES</h1>
+        <p>variety's the very spice of life,that givesn it all its flavor</p>
+        <div class="input-group m-4">
+            <input type="text" class="form-control"  placeholder="search"> 
+            <button class="btn signin">Get Started</button>
+        </div>
+    </section>
+
+
+    <!-- about -->
+
+
+    <section class="slidespices" id="about2">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="https://www.wallpaperflare.com/static/903/929/236/spices-sprinkles-food-lot-wallpaper.jpg" alt="Image 1" height="300px" width="300px">
+            <img src="https://th.bing.com/th/id/OIP.mhmSvG__TsxGRXIes9hOVgHaEo?w=251&h=180&c=7&r=0&o=5&pid=1.7" alt="Image 2" height="300px" width="300px">
+            <img src="https://th.bing.com/th/id/OIP.yKswudDxTKdmocvLT193NQHaFj?rs=1&pid=ImgDetMain" alt="Image 3" height="300px" width="300px">
+            <img src="https://wallpapercave.com/wp/wp8466649.jpg" alt="Image 4" height="300px" width="300px">
+        </div>
+         
+    </div>
+    <div class="paraslide"> 
+        <h1>About us</h1><br><br>
+        <div class="para">
+        <p>Organic spices are natural seasonings derived from plants grown without the use of synthetic fertilizers, pesticides, or genetically modified organisms (GMOs). These spices are cultivated in compliance with organic farming standards, which prioritize environmental sustainability, biodiversity, and soil health. Here are some key points about Organic spices are free from chemical residues, making them a healthier choice for consumers. They are also non-GMO, ensuring natural genetic makeup. Organic farming practices promote ecological balance, conserve biodiversity, and enhance soil fertility. This reduces pollution and conserves water.Many people believe that organic spices have a richer flavor and more potent aroma compared to conventionally grown spices due to the absence of chemical treatments.Organic spices are free from artificial colors, preservatives, and other additives, ensuring a pure and natural product.Known for its anti-inflammatory and antioxidant properties.Popular for its warm, sweet flavor </p>
+        </div>
+    </div>  
+
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll('.carousel-slide img');
+        const totalSlides = slides.length;
+
+        function showNextSlide() {
+            slides[index].classList.remove('active');
+            index = (index + 1) % totalSlides;
+            slides[index].classList.add('active');
+        }
+
+        setInterval(showNextSlide, 3000); // Change image every 3 seconds
+    </script>
+    </section>
+    
+
+    <!-- products -->
+
+
+    <section id="product">
+        <div class="container m-5">
+            <h1 class="text-center my-5">OUR PRODUCTS</h1>
+            <div class="row">
+                <div class="col-lg-4  col-md-4 col-12">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.M1YvK2usGTJPmM_wCNmXpwAAAA?w=400&h=400&rs=1&pid=ImgDetMain"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PAPRIKA</h5>
+
+                            <a href="#buynow" class="btn signin">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-4 col-12">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.spxat6ritNzORpUQIF08cwHaLL?w=1695&h=2560&rs=1&pid=ImgDetMain"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">OREGANO</h5>
+
+                            <a href="#buynow" class="btn signin">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-4 col-12">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.Am-vgyUxuLuLiol4Uco2RQHaHa?w=720&h=720&rs=1&pid=ImgDetMain"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+
+                            <h5 class="card-title">ROSEMARY</h5>
+
+                            <a href="#buynow" class="btn signin">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4  col-md-4 col-12">
+                    <div class="card">
+                        <img src="https://cdn.shopify.com/s/files/1/0478/1260/8159/products/f3c71a62dce265984a4a1924b076bc586ba511fe14651281cfb225bdf275142a.jpg?v=1626224760"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">THYME</h5>
+
+                            <a href="#buynow" class="btn signin">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-4 col-12">
+                    <div class="card">
+                        <img src="https://cmulay.github.io/ws-sudts/images/shop/sh-detail/sp11.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">NUTMEG</h5>
+
+                            <a href="#buynow" class="btn signin">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-4 col-12">
+                    <div class="card">
+                        <img src="https://slviki.org/wp-content/uploads/2021/04/saffron-spice-herb-2048x1277.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+
+                            <h5 class="card-title">SAFFRON</h5>
+
+                            <a href="#buynow" class="btn signin">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4  col-md-4 col-12">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.Rwy_2mR4Zuvag1RPGs2hIgHaHP?rs=1&pid=ImgDetMain"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CARAWAY</h5>
+
+                            <a href="#buynow" class="btn signin">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-4 col-12">
+                    <div class="card">
+                        <img src="https://cdn.shopify.com/s/files/1/0066/4662/products/yerba_mate-2_580x@2x.jpg?v=1533613488"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">SAGE</h5>
+
+                            <a href="#buynow" class="btn signin">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-4 col-12">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/R.3d3c152f6553ffc620314adc52a848eb?rik=vihMR6IZ%2frn5OQ&riu=http%3a%2f%2fspecialtyproduce.com%2fsppics%2f6479-a.png&ehk=ysr%2bliQ1in0B5Cu6s%2fgyW7Xc5Rkm6aYZDVlh5g5xm4k%3d&risl=&pid=ImgRaw&r=0"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+
+                            <h5 class="card-title">DILL</h5>
+
+                            <a href="#buynow" class="btn signin">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- contact -->
+
+
+    <section id="contact">
+        <!-- <div class="container box"> -->
+            <!-- <div class="row"> -->
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h1>Contact us</h1><br>
+                    <h3>Spices</h3><br>
+                    <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></i><h4>9944101667</h4>
+                    <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></i><h4>spices@gmail.com</h4>
+                    <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg></i><h4>34,Adaiyar,Chennai-626001</h4>
+                </div>
+            <!-- </div> -->
+        <!-- </div> -->
+    </section>
+
+
+    <footer>Copyrights @TechSquad</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+

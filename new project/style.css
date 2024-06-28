@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.5);
+    background-color: black;
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+    font-weight: 800;
+    color:pink !important;
+    text-shadow: 2px 2px 3px;
+}
+#navbarSupportedContent a{
+    color: #fff;
+    text-decoration: none ;
+}
+#navbarSupportedContent a:hover{
+
+    color: pink;
+
+}
+#navbarSupportedContent button{
+    background:rgb(180, 32, 56) !important;
+    width: 5rem;
+    border-radius: 15px;
+    text-decoration: none;
+}
+#navbarSupportedContent button:hover{
+    box-shadow:3px 3px 4px hotpink;
+}
+
+#navbarSupportedContent .btn{
+    margin: 2px;
+    padding:2px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(./bg.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#home h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px 4px gray; 
+     }
+     #home p{
+        font-size: 18px;
+        color: white;
+     }
+     #home .input-group{
+        width: 40%;
+        height: 45px;
+     }
+     .signin{
+        background: rgb(78, 203, 78) !important;
+        color: white !important;
+        box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+     }
+
+
+     /* about */
+
+     .slidespices{
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: lightblue;
+       
+    }
+    
+    .carousel-container {
+        width: 80%;
+        max-width: 400px;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-top: 90px;
+        display: flex;
+        float: left;
+        padding: 10px;
+        box-shadow: 3px 3px 4px gray;
+       
+    }
+    
+    .carousel-slide {
+        display: flex;
+        float: left;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-slide img {
+        width: 100%;
+        border-radius: 10px;
+        display: none; /* Hide all images by default */
+    }
+    
+    .carousel-slide img.active {
+        display: block; /* Show the active image */
+    }
+    .paraslide{
+        text-align: center;
+        padding: 20px;
+    }
+    .para{
+        border: 2px solid white;
+        background-color:pink;
+        width: 700px;
+        height: 450px;
+        letter-spacing: 2px;
+        margin: 5px;
+        text-align: justify;
+        padding: 15px
+    }
+    
+      
+
+/*products*/
+
+#product{
+    background: #e5e5e5;
+}
+#product h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 3px 3px 4px gray;
+}
+#product img{
+    width: 200px;
+    height: 200px;
+
+}
+#product .card{
+    width: 250px;
+    height: 300px;
+    background: #e5e5e5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+    transition: .2s;
+}
+#product .card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+    transition: .2s;   
+}
+
+/******************CONTACT**************/
+
+
+#contact{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(./images/sp2.jpeg);
+    background-size: cover;
+}
+#contact h1{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+}
+#contact h3{
+    color: white;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 50px;
+}
+#contact h4{
+    color: #fff;
+}
+#contact i{
+    background-color: #fff;
+}
+
+
+
+/* footer */
+
+
+footer{
+    width: 100%;
+    height: 30px;
+    background: rgb(0,0,0,.8);
+    margin-top: -30px;
+    text-align: center;
+    color: white;
+    padding: 3px;   
+}
+
+
+/* login */
+
+.loginsuccess {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+#success-message {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.btn{
+    background-color: skyblue;
+}
